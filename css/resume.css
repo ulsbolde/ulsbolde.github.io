@@ -3,12 +3,17 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
+
+/* Recommended font-family: Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 :root {
   --theme-color: #0a3f8a;
   --theme-hover-color: #1765d1;
 }
 body {
-  font-family: 'Open Sans', serif;
+  /*font-family: 'Open Sans', serif;*/
+  font-family: 'Montserrat', sans-serif;
   padding-top: 54px;
   color: #868e96;
 }
@@ -26,8 +31,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
+  /* font-family: 'Saira Extra Condensed', serif; */
+  font-family: 'Poppins', serif;
+  font-weight: 600;
   text-transform: uppercase;
   color: #343a40;
 }
@@ -43,9 +49,9 @@ h2 {
 
 .subheading {
   text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem;
+  font-weight: 200;
+  font-family: 'Poppins', serif;
+  font-size: 1.2rem;
 }
 
 .list-social-icons a {
