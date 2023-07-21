@@ -4,14 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 :root {
---theme-color: #0a3f8a;
---theme-hover-color: #1765d1;
---secondary-color: #c10751;
---secondary-hover-color: #7d0b39;
---header-color: #000;
---body-color: #484e53;
+    --theme-color: #0a3f8a;
+    --theme-hover-color: #1765d1;
+    --secondary-color: #c10751;
+    --secondary-hover-color: #7d0b39;
+    --header-color: #000;
+    --body-color: #484e53;
 
 }
+
 body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;
@@ -167,4 +168,44 @@ a:active,
 a:focus,
 a:hover {
     color: var(--theme-hover-color);
+}
+
+.resume-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resume-item {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio (height / width) */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+    .resume-item {
+        flex-basis: calc(33.3333% - 1rem);
+    }
+}
+
+@media (max-width: 767px) {
+    .resume-item {
+        flex-basis: 100%;
+    }
 }
